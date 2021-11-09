@@ -18,7 +18,7 @@
 	<meta property="og:type" content="article" />
 
     <!-- Website Title -->
-    <title>Tivo - SaaS App HTML Landing Page Template</title>
+    <title>Help Me</title>
     
     <!-- Styles -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap&subset=latin-ext" rel="stylesheet">
@@ -29,7 +29,7 @@
 	<link href="{{ url_for('static',filename='css/styles.css') }}" rel="stylesheet">
 	
 	<!-- Favicon  -->
-    <link rel="icon" href="{{ url_for('static',filename='images/favicon.png') }}">
+    <link rel="icon" href="{{ url_for('static',filename='images/logo.png') }}">
 </head>
 <body data-spy="scroll" data-target=".fixed-top">
     
@@ -43,33 +43,106 @@
     </div>
     <!-- end of preloader -->
     
+     <!-- Navigation -->
+     <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+        <div class="container">
+
+            <!-- Text Logo - Use this if you don't have a graphic logo -->
+            <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Tivo</a> -->
+
+            <!-- Mobile Menu Toggle Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-awesome fas fa-bars"></span>
+                <span class="navbar-toggler-awesome fas fa-times"></span>
+            </button>
+            <!-- end of mobile menu toggle button -->
+
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#features">Translate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#details">Comprehend</a>
+                    </li>
+
+                    <!-- Dropdown Menu -->          
+                    <li class="nav-item dropdown">
+                        <a class="nav-link page-scroll" href="#video" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">Polly</a>
+
+                    </li>
+                    <!-- end of dropdown menu -->
+
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#pricing">Services</a>
+                    </li>
+                </ul>
+            
+            </div>
+        </div> <!-- end of container -->
+    </nav> <!-- end of navbar -->
+    <!-- end of navigation -->
+
+
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="header-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-xl-5">
+                        <div class="text-container">
+                            <h1>HELP ME</h1>
+                            <p class="p-large">Fluent and accurate machine translation</p>
+                            <a class="btn-solid-lg page-scroll">AWS</a>
+                        </div> <!-- end of text-container -->
+                    </div> <!-- end of col -->
+                    <div class="col-lg-6 col-xl-7">
+                        <div class="image-container">
+                            <div class="img-wrapper">
+                                <img class="img-fluid" src="{{ url_for('static',filename='images/header-software-app.png') }}" alt="alternative">
+                            </div> <!-- end of img-wrapper -->
+                        </div> <!-- end of image-container -->
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of header-content -->
+    </header> <!-- end of header -->
+    <svg class="header-frame" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 1920 310"><defs>
+        <style>.cls-1{fill:#5f4def;}</style></defs>
+        <title>header-frame</title>
+        <path class="cls-1" d="M0,283.054c22.75,12.98,53.1,15.2,70.635,14.808,92.115-2.077,238.3-79.9,354.895-79.938,59.97-.019,106.17,18.059,141.58,34,47.778,21.511,47.778,21.511,90,38.938,28.418,11.731,85.344,26.169,152.992,17.971,68.127-8.255,115.933-34.963,166.492-67.393,37.467-24.032,148.6-112.008,171.753-127.963,27.951-19.26,87.771-81.155,180.71-89.341,72.016-6.343,105.479,12.388,157.434,35.467,69.73,30.976,168.93,92.28,256.514,89.405,100.992-3.315,140.276-41.7,177-64.9V0.24H0V283.054Z"/></svg>
+    <!-- end of header -->
+
+
+    <!-- Customers -->
+    <div class="slider-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    
+                    <!-- Image Slider -->
+                    <div class="slider-container">
+
+                    </div> <!-- end of slider-container -->
+                    <!-- end of image slider -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of slider-1 -->
+    <!-- end of customers -->
 
     <!-- Features -->
     <div id="features" class="tabs">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="above-heading">FEATURES</div>
-                    <h2 class="h2-heading">Marketing Automation</h2>
-                    <p class="p-heading">Take your business strategy to the next level and automatize your marketing tasks to save time for product development. Tivo can provide results in less than 2 weeks</p>
+                    <div class="above-heading">Amazon Translate is a neural machine translation service that delivers fast, high-quality, affordable, and customizable language translation.</div>
+                    <h2 class="h2-heading">Translate</h2>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
             <div class="row">
                 <div class="col-lg-12">
-
-                    <!-- Tabs Links -->
-                    <ul class="nav nav-tabs" id="argoTabs" role="tablist">
-                        <li class="nav-item">
-                            <a class="nav-link active" id="nav-tab-1" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true"><i class="fas fa-list"></i>SERVICE 1</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="nav-tab-2" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false"><i class="fas fa-envelope-open-text"></i>SERVICE 2</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="nav-tab-3" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="false"><i class="fas fa-chart-bar"></i>SERVICE 3</a>
-                        </li>
-                    </ul>
-                    <!-- end of tabs links -->
 
                     <!-- Tabs Content -->
                     <div class="tab-content" id="argoTabsContent">
@@ -84,88 +157,18 @@
                                 </div> <!-- end of col -->
                                 <div class="col-lg-6">
                                     <div class="text-container">
-                                        <h3>List Building Is Easier Than Ever</h3>
-                                        <p>It's very easy to start using Tivo.</p>
                                         <div class="form-container">
                                             <form action="/sound" method="post">
-                                                Text <textarea type="text" name="texttotranslate"></textarea><br>
-                                                Source Language <input type="text" name="sourcelanguage"><br>
-                                                Target Language <input type="text" name="targetlanguage"><br>
+                                                Text <textarea type="text" class="form-control-input" name="texttotranslate"></textarea><br>
+                                                Source Language <input type="text" class="form-control-input" name="sourcelanguage"><br>
+                                                Target Language <input type="text" class="form-control-input" name="targetlanguage"><br>
                                                 <br>
-                                                <input type="submit" value="Translate">
+                                                <input type="submit" class="form-control-submit-button" value="Translate">
                                                 </form>
                                                 {% if conversion %}
                                                 <h2> {{ conversion }} </h2>
                                                 {% endif %}
-                                                {% if audiospeech %}
-                                                <audio controls>
-                                                  <source src="{{ url_for('static', filename='speech.mp3') }}" type="audio/mpeg">
-                                                </audio>
-                                                {% endif %}
                                         </div> <!-- end of form container -->
-                                    </div> <!-- end of text-container -->
-                                </div> <!-- end of col -->
-                            </div> <!-- end of row -->
-                        </div> <!-- end of tab-pane -->
-                        <!-- end of tab -->
-
-                        <!-- Tab -->
-                        <div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="tab-2">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="image-container">
-                                        <img class="img-fluid" src="{{ url_for('static',filename='images/features-2.png') }}" alt="alternative">
-                                    </div> <!-- end of image-container -->
-                                </div> <!-- end of col -->
-                                <div class="col-lg-6">
-                                    <div class="text-container">
-                                        <h3>List Building Is Easier Than Ever</h3>
-                                        <p>It's very easy to start using Tivo.</p>
-                                        <div class="form-container">
-                                            <form action="/sentiment" method="post">
-                                                Text <textarea type="text" name="sentimenttext"></textarea><br>
-                                                <br>
-                                                <input type="submit" value="Sentiment">
-											</form>
-											<br><br>
-											{% if result %}
-											<h2>{{ result }} </h2>
-											{% endif %}
-                                                
-                                        </div> <!-- end of form container -->
-                                    </div> <!-- end of text-container -->
-                                </div> <!-- end of col -->
-                            </div> <!-- end of row -->
-                        </div> <!-- end of tab-pane -->
-                        <!-- end of tab -->
-
-                        <!-- Tab -->
-                        <div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="tab-3">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="image-container">
-                                        <img class="img-fluid" src="{{ url_for('static',filename='images/features-3.png') }}" alt="alternative">
-                                    </div> <!-- end of image-container -->
-                                </div> <!-- end of col -->
-                                <div class="col-lg-6">
-                                    <div class="text-container">
-                                        <h3>Analytics Control Panel</h3>
-                                        <p>Analytics control  panel is important for every marketing team so it's beed implemented from the begging and designed to produce reports based on very little input information.</p>
-                                        <ul class="list-unstyled li-space-lg">
-                                            <li class="media">
-                                                <i class="fas fa-square"></i>
-                                                <div class="media-body">If you set it up correctly you will get acces to great intel</div>
-                                            </li>
-                                            <li class="media">
-                                                <i class="fas fa-square"></i>
-                                                <div class="media-body">Easy to integrate in your websites and landing pages</div>
-                                            </li>
-                                            <li class="media">
-                                                <i class="fas fa-square"></i>
-                                                <div class="media-body">The generated reports are important for your strategy</div>
-                                            </li>
-                                        </ul>
-                                        <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-3">LIGHTBOX</a>
                                     </div> <!-- end of text-container -->
                                 </div> <!-- end of col -->
                             </div> <!-- end of row -->
@@ -181,6 +184,148 @@
     </div> <!-- end of tabs -->
     <!-- end of features -->
 
+    
+
+
+    <!-- Details -->
+    <div id="details" class="basic-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="above-heading">Amazon Comprehend is a natural-language processing (NLP) service that uses machine learning to uncover valuable insights and connections in text.                    </div>
+                    <h2 class="h2-heading">Comprehend</h2>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="text-container">
+                        <div class="form-container">
+                            <form action="/sentiment" method="post">
+                                Text <textarea type="text" class="form-control-input" name="sentimenttext"></textarea><br>
+                                <br>
+                                <input type="submit" class="form-control-submit-button" value="Sentiment">
+                            </form>
+                            <br><br>
+                            {% if result %}
+                            <h2>{{ result }} </h2>
+                            {% endif %}
+                                
+                        </div> <!-- end of form container -->
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-6">
+                    <div class="image-container">
+                        <img class="img-fluid" src="{{ url_for('static',filename='images/details.png') }}" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-1 -->
+    <!-- end of details -->
+
+
+    <!-- Video -->
+    <div id="video" class="basic-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="above-heading">Amazon Polly is a service that turns text into lifelike speech, allowing you to create applications that talk, and build entirely new categories of speech-enabled products.</div>
+                    <h2 class="h2-heading">Amazon Polly</h2>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3>text-to-speech</h3>
+                    <!-- Video Preview -->
+                    <div class="image-container">
+                        <div class="video-wrapper">
+                            <a class="popup-youtube" href="https://www.youtube.com/watch?v=fLCjQJCekTs" data-effect="fadeIn">
+                                <img class="img-fluid" src="{{ url_for('static',filename='images/video-image.png') }}" alt="alternative">
+                                <span class="video-play-button">
+                                    <span></span>
+                                </span>
+                            </a>
+                        </div> <!-- end of video-wrapper -->
+                    </div> <!-- end of image-container -->
+                    <!-- end of video preview -->
+                    {% if audiospeech %}
+                    <audio controls>
+                        <source src="{{ url_for('static', filename='speech.mp3') }}" type="audio/mpeg">
+                    </audio>
+                    {% endif %}
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-2 -->
+    <!-- end of video -->
+
+
+    <!-- Pricing -->
+    <div id="pricing" class="cards-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="h2-heading">AWS Services</h2>
+                    <p class="p-heading">Make accurate predictions, get deeper insights from your data, reduce operational overhead, and improve customer experience with AWS machine learning (ML). AWS helps you at every stage of your ML adoption journey with the most comprehensive set of artificial intelligence (AI) and ML services, infrastructure, and implementation resources.</p>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <!-- Card -->
+                    <div class="card">
+                        <div class="card-image">
+                            <img class="img-fluid" src="{{ url_for('static',filename='images/comprehend.png') }}" alt="alternative">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Amazon Comprehend</h4>
+                            <p>Derive and understand valuable insights from text within documents</p>
+                        </div>
+                    </div>
+                    <!-- end of card -->
+
+                    <!-- Card -->
+                    <div class="card">
+                        <div class="card-image">
+                            <img class="img-fluid" src="{{ url_for('static',filename='images/Translate.png') }}" alt="alternative">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Amazon Translate</h4>
+                            <p>Fluent and accurate machine translation</p>
+                        </div>
+                    </div>
+                    <!-- end of card -->
+
+                    <!-- Card -->
+                    <div class="card">
+                        <div class="card-image">
+                            <img class="img-fluid" src="{{ url_for('static',filename='images/Polly.png') }}" alt="alternative">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Amazon Polly</h4>
+                            <p>Turn text into lifelike speech using deep learning</p>
+                        </div>
+                    </div>
+                    <!-- end of card -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of cards-2 -->
+    <!-- end of pricing -->
+
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-small">Copyright © 2021 <a href="https://inovatik.com">Help Me | Christ (Deemed to be University)</a></p>
+                </div> <!-- end of col -->
+            </div> <!-- enf of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of copyright --> 
+    <!-- end of copyright -->
     	
     <!-- Scripts -->
     <script src="{{ url_for('static',filename='js/jquery.min.js') }}"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
